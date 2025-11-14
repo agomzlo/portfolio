@@ -1,0 +1,73 @@
+@import "tailwindcss";
+@import "@fontsource-variable/plus-jakarta-sans/index.css";
+
+@source inline("{group-hover:}drop-shadow-{react,figma,git,javascript,laravel,mysql,php,astro,tailwind-css}");
+
+@theme {
+    --color-title: #F5F3FF;
+    --color-text: #B3B3B3;
+    --color-background: #080808;
+
+    --color-astro: #f35b27;
+    --color-figma: #5fd083;
+    --color-git: #f34f29;
+    --color-javascript: #f0db4f;
+    --color-laravel: #f05340;
+    --color-mysql: #06618a;
+    --color-php: #767bb3;
+    --color-react: #61dafb;
+    --color-tailwind-css: #38bdf8;
+
+    --animate-neon: neon 2s forwards infinite ease-in-out;
+    
+    @keyframes neon {
+        0%, 100% {
+            opacity: 75%;
+        }
+        50% {
+            opacity: 100%;
+        }
+    }
+}
+
+body {
+    font-family: "Plus Jakarta Sans", sans-serif;   
+}
+
+.reveal{
+    mask-image: url("/logo.svg");
+    mask-position: center 50%;
+    mask-repeat: no-repeat;
+    mask-size: 25vw;
+    animation: page-reveal 5s forwards;
+}
+
+.header-reveal{
+    animation: header-background 5s forwards;
+    animation-timeline: scroll();
+    animation-range: 0 500px;
+}
+
+.neon {
+    animation: neon 2s forwards infinite ease-in-out;
+}
+
+@keyframes page-reveal {
+    from {
+        mask-size: 25vw;
+    }
+    to {
+        mask-size: 2500vw;
+    }
+}
+
+@keyframes header-background {
+    from {
+        background-color: transparent;
+        backdrop-filter: blur(0px);
+    }
+    to {
+        background-color: rgba(8, 8, 8, 75%);
+        backdrop-filter: blur(10px);
+    }
+}

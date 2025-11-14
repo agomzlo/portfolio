@@ -1,11 +1,31 @@
 ---
-import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Header from '../sections/Header.astro';
+import Hero from '../sections/Hero.astro';
+import About from '../sections/About.astro';
+import Experience from '../sections/Experience.astro';
+import Skills from '../sections/Skills.astro';
+import Projects from '../sections/Projects.astro';
+import Contact from '../sections/Contact.astro';
+import Footer from '../sections/Footer.astro';
 ---
-
 <Layout>
-	<Welcome />
+	<dialog id="menu-dialog" class="fixed top-0 right-0 pt-[104px] size-full bg-background z-50">
+		<div class="flex flex-col justify-end items-end gap-4 px-2.5">
+			<a href="#" class="text-text text-lg" onclick="document.getElementById('menu-dialog').close()">Inicio</a>
+            <a href="#about" class="text-text text-lg" onclick="document.getElementById('menu-dialog').close()">Sobre Mi</a>
+            <a href="#projects" class="text-text text-lg" onclick="document.getElementById('menu-dialog').close()">Proyectos</a>
+            <a href="#contact" class="text-text text-lg" onclick="document.getElementById('menu-dialog').close()">Contacto</a>
+        </div>
+    </dialog>
+	<Header />
+	<main class="flex flex-col justify-center">
+		<Hero />
+		<About />
+		<Experience />
+		<Skills />
+		<Projects />
+		<Contact />
+	</main>
+	<Footer />
 </Layout>

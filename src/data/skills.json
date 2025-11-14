@@ -1,0 +1,49 @@
+{
+    "skills": [
+        {
+            "name": "Astro",
+            "image": "/frameworks/Astro.svg",
+            "color": "astro"
+        },
+        {
+            "name": "Figma",
+            "image": "/frameworks/Figma.svg",
+            "color": "figma"
+        },
+        {
+            "name": "Git",
+            "image": "/frameworks/Git.svg",
+            "color": "git"
+        },
+        {
+            "name": "Javascript",
+            "image": "/frameworks/JavaScript.svg",
+            "color": "javascript"
+        },
+        {
+            "name": "Laravel",
+            "image": "/frameworks/Laravel.svg",
+            "color": "laravel"
+        },
+        {
+            "name": "MySQL",
+            "image": "/frameworks/MySQL.svg",
+            "color": "mysql"
+        },
+        {
+            "name": "React",
+            "image": "/frameworks/React.svg",
+            "color": "react"
+        },
+        {
+            "name": "PHP",
+            "image": "/frameworks/PHP.svg",
+            "color": "php"
+        },
+        {
+            "name": "Tailwind CSS",
+            "image": "/frameworks/Tailwind CSS.svg",
+            "color": "tailwind-css"
+        }
+    ]
+}

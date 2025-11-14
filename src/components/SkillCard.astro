@@ -1,0 +1,8 @@
+---
+const { name, image, color } = Astro.props;
+---
+
+<span class="group relative flex flex-col items-center justify-center gap-2 bg-background p-4 rounded-xl hover:scale-110 transition-all cursor-pointer">
+    <img src={image} class={`lg:size-24 size-16 drop-shadow-text/25 drop-shadow-lg group-hover:drop-shadow-${color} transition-all`} alt={name}>
+    <p class="text-title font-bold text-center lg:text-lg">{name}</p>
+</span>

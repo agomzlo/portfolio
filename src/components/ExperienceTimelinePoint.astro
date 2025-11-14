@@ -1,0 +1,24 @@
+---
+import BottomTimeline from "../icons/timeline/BottomTimeline.astro";
+import CenterTimeline from "../icons/timeline/Centertimeline.astro";
+import TopTimeline from "../icons/timeline/TopTimeline.astro";
+const { item, index, experienceLength } = Astro.props;
+---
+<div class="group flex flex-row justify-center items-center gap-3 lg:gap-6 w-full size-full lg:text-nowrap cursor-pointer">
+    <p class="text-text font-semibold text-xl group-hover:text-title transition-colors">{item.date}</p>
+    {
+        index === 0 ? (
+            <TopTimeline class="text-text w-8 group-hover:text-title transition-colors" />
+        ) : index === experienceLength - 1 ? (
+            <BottomTimeline class="text-text w-8 group-hover:text-title transition-colors" />
+        ) : (
+            <CenterTimeline class="text-text w-8 group-hover:text-title transition-colors" />
+        )
+    }
+    <div class="flex flex-col justify-center w-full">
+        <h3 class="text-xl lg:text-2xl font-bold text-title">{item.title}</h3>
+        <p class="text-text">{item.description}</p>
+        <p class="text-text">{item.company}</p>
+        <p class="text-text">{item.location}</p>
+    </div>
+</div>

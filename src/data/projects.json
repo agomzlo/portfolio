@@ -1,0 +1,22 @@
+{
+    "projects": [
+        {
+            "title": "FullRenew SL",
+            "description": "Proyecto Real",
+            "img": "/projects/fullrenew.png",
+            "link": "https://www.fullrenew.es/"
+        },
+        {
+            "title": "Taxi 12 Vélez-Málaga",
+            "description": "Proyecto Real",
+            "img": "/projects/taxi12.png",
+            "link": "https://www.taxi12velezmalaga.es/"
+        },
+        {
+            "title": "Restaurante Bruma",
+            "description": "Proyecto Personal",
+            "img": "/projects/bruma.png",
+            "link": "https://bruma-agomzlodev.vercel.app/"
+        }
+    ]
+}

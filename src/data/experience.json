@@ -1,0 +1,39 @@
+{
+    "experience": [
+        {
+            "title": "Grado Medio Sistemas Microinformáticos y Redes",
+            "company": "IES Juán de la Cierva",
+            "location": "Vélez-Málaga",
+            "date": "2018 - 2020",
+            "description": ""
+        },
+        {
+            "title": "Desarrollador Web",
+            "company": "Universo Web",
+            "location": "Torre del Mar",
+            "date": "2020 - 2020",
+            "description": "Desarrollo de páginas web con el uso de CMS WordPress."
+        },
+        {
+            "title": "Grado Superior Desarrollo de Aplicaciones Web",
+            "company": "IES Politécnico Jesús Marín",
+            "location": "Málaga",
+            "date": "2020 - 2023",
+            "description": ""
+        },
+        {
+            "title": "Desarrollador PHP",
+            "company": "Enreach Labs",
+            "location": "Málaga",
+            "date": "2022 - 2022",
+            "description": "Desarrollo PHP con el uso de un framework"
+        },
+        {
+            "title": "Desarrollador Web",
+            "company": "FullRenew SL",
+            "location": "Vélez-Málaga",
+            "date": "2024 - 2025",
+            "description": "Desarrollo de varias paginas web con el uso de algunos frameworks como Laravel, React, Astro, etc..."
+        }
+    ]
+}

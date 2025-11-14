@@ -1,0 +1,22 @@
+---
+import CV from "../icons/CV.astro";
+import Linkedin from "../icons/Linkedin.astro";
+import GitHub from "../icons/GitHub.astro";
+---
+
+<section class="w-full relative reveal">
+    <span class="absolute inset-0 px-4 size-full flex justify-center items-center z-10">
+        <div class="max-w-[1200px] size-full flex flex-col justify-center gap-2">
+            <h1 class="text-4xl lg:text-6xl font-bold text-title">Alejandro Gómez</h1>
+            <p class="text-xl lg:text-2xl font-light text-text">Desarrollador Web</p>
+            <p class="text-lg lg:text-xl text-text/80 text-balance w-full lg:w-1/2">Diseño y desarrollo sitios web modernos con un equilibrio entre estética, rendimiento y tecnología</p>
+            <span class="flex gap-4">
+                <a href="https://linkedin.com/in/agomzlo" target="_blank" rel="noopener noreferrer"><Linkedin class="size-10 text-text hover:text-title" /></a>
+                <a href="https://github.com/agomzlo" target="_blank" rel="noopener noreferrer"><GitHub class="size-10 text-text hover:text-title" /></a>
+                <a href="/CV-Alejandro-Gomez.pdf" target="_blank"><CV class="size-10 text-text hover:text-title" /></a>
+            </span>
+        </div>
+    </span>
+    <video src="/video.mp4" class="w-full h-screen object-cover object-top brightness-25" autoplay loop muted style="clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 50% 100%, 0 85%);"></video>
+    <video src="/video.mp4" class="absolute -bottom-48 blur-2xl -z-40 brightness-75" autoplay loop muted></video>
+</section>
