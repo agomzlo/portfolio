@@ -1,0 +1,13 @@
+---
+import Download from "../icons/Download.astro";
+---
+
+<dialog id="menu-dialog" class="fixed top-0 right-0 pt-[104px] size-full bg-background z-50">
+    <div class="flex flex-col justify-end items-end gap-4 px-2.5">
+        <a href="#hero" class="text-text text-lg" onclick="document.getElementById('menu-dialog').close()">Inicio</a>
+        <a href="#about" class="text-text text-lg" onclick="document.getElementById('menu-dialog').close()">Sobre Mi</a>
+        <a href="#projects" class="text-text text-lg" onclick="document.getElementById('menu-dialog').close()">Proyectos</a>
+        <a href="#contact" class="text-text text-lg" onclick="document.getElementById('menu-dialog').close()">Contacto</a>
+        <a href="/CV-Alejandro-Gomez.pdf" target="_blank" class="bg-text text-xl hover:bg-title flex items-center gap-2 px-2 py-1 rounded-lg">CV <Download class="size-5" /></a>
+    </div>
+</dialog>

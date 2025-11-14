@@ -8,16 +8,10 @@ import Skills from '../sections/Skills.astro';
 import Projects from '../sections/Projects.astro';
 import Contact from '../sections/Contact.astro';
 import Footer from '../sections/Footer.astro';
+import Dialog from '../components/Dialog.astro';
 ---
 <Layout>
-	<dialog id="menu-dialog" class="fixed top-0 right-0 pt-[104px] size-full bg-background z-50">
-		<div class="flex flex-col justify-end items-end gap-4 px-2.5">
-			<a href="#" class="text-text text-lg" onclick="document.getElementById('menu-dialog').close()">Inicio</a>
-            <a href="#about" class="text-text text-lg" onclick="document.getElementById('menu-dialog').close()">Sobre Mi</a>
-            <a href="#projects" class="text-text text-lg" onclick="document.getElementById('menu-dialog').close()">Proyectos</a>
-            <a href="#contact" class="text-text text-lg" onclick="document.getElementById('menu-dialog').close()">Contacto</a>
-        </div>
-    </dialog>
+	<Dialog />
 	<Header />
 	<main class="flex flex-col justify-center">
 		<Hero />
