@@ -17,6 +17,8 @@ import Github from "../icons/Github.astro";
             </span>
         </div>
     </span>
-    <video src="/video.mp4" class="w-full h-screen object-cover object-top brightness-25" autoplay loop muted style="clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 50% 100%, 0 85%);"></video>
-    <video src="/video.mp4" class="absolute -bottom-48 blur-2xl -z-40 brightness-75" autoplay loop muted></video>
+    <video src="/video.mp4" class="w-full h-screen object-cover object-top brightness-25 hidden lg:block" autoplay loop muted style="clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 50% 100%, 0 85%);"></video>
+    <video src="/video.mp4" class="absolute -bottom-48 blur-2xl -z-40 brightness-75 hidden lg:block" autoplay loop muted></video>
+    <img src="/mobile-background.png" class="w-full h-screen object-cover object-top brightness-25 lg:hidden" style="clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 50% 100%, 0 85%);" alt="">
+    <img src="/mobile-background.png" class="absolute -bottom-48 blur-2xl -z-40 brightness-75 lg:hidden" alt="">
 </section>
